@@ -46,8 +46,9 @@
   show figure.where(kind: table): set text(size: 8pt)
   show figure.where(kind: table): set figure(numbering: "I")
   show figure.where(kind: image): set figure(supplement: figure-supplement, numbering: "1")
-  show figure.caption: set text(size: 8pt)
-
+  show figure.caption: set text(size: 8pt, hyphenate: false)
+  // figures should be the next page 
+  // https://github.com/typst/typst/issues/3967
 
   // Adapt supplement in caption independently from supplement used for
   // references.
