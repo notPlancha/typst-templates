@@ -1,4 +1,4 @@
-#import "@preview/charged-ieee:0.1.3": ieee
+#import "../lib.typ": ieee
 
 #show: ieee.with(
   title: [A Typesetting System to Untangle the Scientific Writing Process],
@@ -46,8 +46,7 @@ $ a + b = gamma $ <eq:gamma>
 #lorem(80)
 
 #figure(
-  placement: none,
-  circle(radius: 15pt),
+  image("example.jpg"),
   caption: [A circle representing the Sun.]
 ) <fig:sun>
 
