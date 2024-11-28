@@ -95,7 +95,7 @@
 
   // Configure appearance of equation references
   show ref: it => {
-    if it.element != none and it.element.func() == math.equation {
+    if it.element != none and it.element.func() == math.equation and math.equation.numbering != none {
       // Override equation references.
       link(it.element.location(), numbering(
         it.element.numbering,
